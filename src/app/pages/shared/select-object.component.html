@@ -1,0 +1,20 @@
+<ng-template #template>
+    <ion-item>
+        <ion-text color='primary'>{{'select.' + tableKebab | translate}}</ion-text>
+        <ion-button slot='end' ion-text color='dark' (click)='showSearch()'
+            *ngIf="selected && selected.id > 0">
+            {{selected[displayField]}}
+        </ion-button>
+        <ion-button *ngIf="canScan" slot='end' color='secondary' (click)='scan()'
+            *ngIf="!selected || selected.id === 0">
+            <ion-icon name="barcode"></ion-icon>
+            &nbsp;{{'select.scan' | translate}}
+        </ion-button>
+        <ion-button slot='end' (click)='showSearch()' *ngIf="!selected || selected.id === 0">
+            {{'select.search' | translate}}
+        </ion-button>
+        <ion-button slot='end' *ngIf="selected && selected.id > 0" fill='clear' (click)='removeSelected()'>
+            <ion-icon slot='icon-only' name="close"></ion-icon>
+        </ion-button>
+    </ion-item>
+</ng-template>
