@@ -1,7 +1,0 @@
-{
-  "name": "ISale",
-  "integrations": {
-    "capacitor": {}
-  },
-  "type": "angular"
-}

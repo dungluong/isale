@@ -1,0 +1,6 @@
+framework module CapacitorCodepush {
+  umbrella header "CapacitorCodepush-umbrella.h"
+
+  export *
+  module * { export * }
+}
