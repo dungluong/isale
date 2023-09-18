@@ -14,4 +14,5 @@ export class CategoryReport implements ICategoryReport{
     // 0: không loại ai cả, 1: tùy chọn
     ignoreCategory = 0;
     ignoredCategories = '';
+    
 }
