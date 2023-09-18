@@ -1,4 +1,3 @@
-require_relative '../../node_modules/@capacitor/ios/scripts/pods_helpers'
 
 platform :ios, '13.0'
 use_frameworks!
@@ -32,8 +31,4 @@ target 'App' do
   capacitor_pods
   # Add your Pods here
   pod 'Firebase/Messaging' # Add this line
-end
-
-post_install do |installer|
-  assertDeploymentTarget(installer)
 end
